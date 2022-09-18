@@ -1,0 +1,436 @@
+body{
+    font-family: TimeH;
+    font-size: 20px;
+    width: none;
+    margin: 0px auto;
+    padding: 0px;
+    background: url(../images/14.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+/*Thanh menu nằm ở trên cùng của trang*/
+#Menu_top{
+    background-color: #111;
+    height: 50px;
+    color: white;
+    position: fixed;
+    width: 100%;
+    transition: 0.8s;
+}
+#Menu_top:hover{
+  height: 60px;
+  background-color: rgb(36, 33, 33);
+}
+#menu_left ul{
+    margin: 0px;
+    padding: 0px;
+    width: 80%;
+}
+#menu_left ul li {
+    list-style: none;
+}
+#menu_left ul li a {
+    transition: 0.8s;
+    text-decoration: none;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    padding: 0px 10px 0px 10px;
+    /*border-right: 1px solid #111;*/
+}
+#menu_left ul li a.images_1 {
+	float: left;
+}
+#menu_left ul li a img.img_1 {
+	  width: 125px;
+	  height: 50px;
+}
+#menu_left ul li a.no_1 {
+	  float: left;
+}
+#menu_left ul li a:hover {
+    height: 60px;
+    line-height: 60px;
+	  color: black;
+	  background-color: white;
+	  border-radius: 5px;
+}
+/*ListBar mục đăng nhập */
+.Lisatbar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.8s;
+    padding-top: 60px;
+  }
+  
+.Lisatbar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+.Lisatbar a:hover {
+    color: #f1f1f1;
+  }
+  
+.Lisatbar .LisatClose {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+.LisatOpen {
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 12px 4px 11px 6px;
+    border: none;
+    margin: 0px 0px 0px 0px;
+    border-radius: 5px;
+    transition: 1s;
+  }
+  
+.LisatOpen:hover {
+    background-color: skyblue;
+    color: darkblue;
+    height: 35px;
+  }
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 150px;
+    font-family: 'Times New Roman', Times, serif;
+	  font-size: 20px;
+  }
+  
+button:hover {
+    opacity: 0.8;
+  }
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+.container {
+    padding: 16px;
+  }
+  
+span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+  }
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; 
+    border: 1px solid #888;
+    width: 500px; 
+  }
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+.close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: left;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+/*Banner nằm ở trên đỉnh của trang*/
+#Banner{
+  margin: 0px 0px -25px 0px;
+  padding: 0px 0px;
+}
+.banner_img{
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
+/*Menu thứ 2 ở dưới*/
+#Menu_events{
+  height: 60px;
+  background-color: black;
+  margin: 0px 0px;
+  padding: 15px 0px;
+  transition: 0.8s;
+}
+#Menu_events:hover{
+  background-color: rgb(69, 6, 87);
+}
+#menu_left ul{
+  margin: 0px;
+  padding: 0px;
+  width: 80%;
+}
+#Menu_evnets_left {
+  width: 80%px;
+}
+#Menu_events_left ul li {
+  list-style: none;
+  margin-bottom: 0px;
+}
+#Menu_events_left ul li a {
+  text-decoration: none;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  color: black;
+  padding: 0px 10px 0px 10px;
+  /*border-right: 1px solid #111;*/
+  transition: 0.8s;
+}
+#Menu_events_left ul li a img.img_2 {
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin: 0px;
+}
+#Menu_events_left ul li a.no_2 {
+  float: left;
+  width: 27px;
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 0px;
+  overflow: hidden;
+  white-space: nowrap; 
+  text-overflow: ellipsis;
+}
+#Menu_events_left ul li a:hover {
+  text-align: center;
+  width: 300px;
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+}
+/*#Menu_events_left ul li a p{
+  margin: 0px;
+}*/
+/*Left body phần chính của trang*/
+.letter_infor{
+  text-align: center;
+  color: #f1f1f1;
+  transition: 0.5s;
+}
+.letter_infor:hover{
+  font-size: 48px;
+  color: rgb(238, 255, 2);
+} 
+/*Phần Body chính*/
+#Body_main{
+  margin-bottom:  50px;
+  padding: 20px 0px 0px 10px;
+}
+/*theo dõi sự kiện*/
+#Left_main{
+  /* background: url(../images/6.jpg) no-repeat;
+  background-size: 100% 100%; */
+  background-color: rgba(27, 17, 34, 0.75);
+  width: 84%;
+  border-radius: 10px;
+  border: 2px solid #fefefe;
+}
+#Left_main .main_event{
+  width: 100%;
+}
+#Left_main , #Left_main .main_event{
+    float: left;
+    height: 2200px;
+    margin: 0px;
+    padding-bottom: 100px;
+}
+/*Right body là bên phải màn hình*/
+#Right_main{
+    width: 15%;
+    float: right;
+    height: 500px;
+    background-color: rgba(163, 235, 205, 0.75);
+    border-radius: 10px;
+    border: 2px solid #fefefe;
+    transition: 0.8s;
+}
+#Right_main:hover{
+    opacity: 1;
+}
+/*phụ lục*/
+#Right_main .pl_name{
+  height: 50px;
+  margin-top: 0px;
+  font-size: 18px;
+  line-height: 50px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: #06442d;
+  border-radius: 10px;
+}
+#Right_main .pluc ul{
+	margin: -20px 0px 0px 0px;
+	padding: 0px;
+	border: 1px solid #ccc;
+}
+#Right_main .pluc ul li {
+  list-style: none;
+	float: left;
+	clear: left;
+	margin-bottom: 10px;
+}
+#Right_main .pluc ul li a{
+  background: url(../images/iconcheck.png) no-repeat 3px;
+  display: block;
+  text-decoration: none;
+  line-height: 32px;
+  border-bottom: 1px solid #888;
+  text-indent: 30px;
+  padding: 0px 15px 0px 0px;
+}
+#Right_main .pluc ul li a:hover{
+  background: url(../images/settingicon.png) no-repeat 3px;
+  background-color:  #410841 ;
+  color: #ffffff;
+  border-radius: 5px;
+}
+/*Footer */
+#Footer {
+  width: 100%;
+  height: 100%;
+  float: left;
+	background: #000;
+	list-style: none;
+	clear: left;
+	font-size: 19px;
+	color: #ccc;
+	clear: left;
+  margin-top: 10px;
+	line-height: 26px;
+	text-decoration: none;
+}
+
+#Footer #left_footer {
+	float: left;
+	width: 65%;
+	min-height: 300px;
+	margin-bottom: 10px;
+}
+#Footer #left_footer h3 {
+  width: 50%;
+  word-wrap: break-word;
+}
+#Footer #right_footer {
+	float: left;
+	width: 35%;
+	margin-bottom: 10px;
+	display: block;
+	padding: 0px;
+}
+#Footer #right_footer .txt_2{
+  height:40px;
+  width:300px;
+}
+#Footer #right_footer .btn_2 {
+	background-color: #FF00FF;
+	color: white;
+  height: 40px;
+	padding: 0px 5px 3px 5px;
+	font-size: 15px;
+	margin: 2px 2px;
+	border-radius: 10px;
+}
+#Footer #right_footer .btn_2:hover {
+	color: red;
+  background-color: #04AA6D;
+}
+#Footer #right_footer ul {
+	text-indent: 0px;
+	color: #ccc;
+}
+#Footer #right_footer ul p a {
+	color: #000;
+	font-size: 20px;
+}
+#Footer #right_footer ul p a:hover {
+	color: ghostwhite;
+}
+#Footer #right_footer ul li input {
+	color: crimson;
+}

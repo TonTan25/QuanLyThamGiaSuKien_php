@@ -1,0 +1,130 @@
+/*div toàn bộ */
+#div_dke{
+    background-color: #76e6b7;
+    width: 1400px;
+    height: 1700px;
+    opacity: 0.8;
+    color: #2c1515;
+    margin: 0px auto 10px auto;
+	padding: 10px 10px 10px 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: 0.8s;
+    animation: transitionIn 1.5s; 
+    text-align: center;
+}
+#div_dke:hover{
+    opacity: 1;
+}
+/*Back*/
+#div_dke .bck ul{
+    margin: 0px;
+    padding: 0px;
+}
+#div_dke .bck ul li {
+    list-style: none;
+    float: left;
+    clear: left;
+}
+#div_dke .bck ul li a {
+    background:  url(../images/back.png) no-repeat ;
+    display: block;
+    color: rgb(49, 49, 49);
+    opacity: 0.5;
+    font-size: 30px;
+    line-height: 32px;
+    text-indent: 25px;
+    text-decoration: none;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 15px 0px 15px;
+    transition: 0.5s;
+}
+#div_dke .bck ul li a:hover{
+    opacity: 1;
+    color: black;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    background: rgb(24, 124, 94) url(../images/back.png) no-repeat ;
+}
+/*Tiêu đè*/
+.P_name{
+    font-size: 45px;
+    color: rgb(35, 35, 119);
+    transition: 0.8s;
+}
+.P_name:hover{
+    color: #2c1515;
+}
+/*bảng */
+.tbl {
+    font-size: 23px;
+    width: 1200px;
+}
+.tbl .dong{
+    border: 1px solid #63f076;
+}
+#div_dke .cot1{
+    text-align: right;
+    width: 40%;
+}
+#div_dke .cot2{
+    text-align: left;
+}
+.txt_00{
+    font-size: 35px;
+}
+@keyframes transitionIn {
+    from{
+        opacity: 0;
+        margin-top: -30px;
+    }
+    to{
+        opacity: 0.8;
+        margin-top: 0px;
+    }
+}
+/*input text*/
+input[type=text], input[type=search] {
+    width: 65%;
+    font-size: 18px;
+    padding: 15px 15px;
+    margin: 6px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input[type=checkbox]{
+    width: 23px;
+    height: 23px;
+}
+/*nút bấm*/
+.btn_3{
+    height: 45px;
+    width: 120px;
+    margin: 6px;
+    padding: 0px 0px 0px 0px ;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 23px;
+    background-color: rgb(121, 46, 46);
+    color: #f1f1f1;
+    border: 5px solid white;
+    opacity: 0.9;
+    border-radius: 10px;
+}
+.btn_3:hover{
+    background-color: rgb(202, 15, 15);
+    border: 1px solid black;
+    opacity: 1;
+    border-radius: 15px;
+}
+.p01{
+    font-size: 23px;
+    line-height: 40px;
+}
+.p01:hover{
+    font-size: 34px;
+    list-style: 60px;
+    background-color: #ffc3c3;
+    border-radius: 5px;
+}

@@ -1,0 +1,141 @@
+/*tổng quan */
+#div_show {
+    width: 1400px;
+    height: 350px;
+    background-color: rgb(244, 223, 250);
+    opacity: 0.8;
+    margin: 0px auto 10px auto;
+	padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    transition: 0.8s;
+    animation: transitionIn 1.5s; 
+}
+#div_show:hover{
+    opacity: 1;
+    background-color: rgb(130, 34, 156);
+    color: #f1f1f1;
+}
+/*#div_show:not(:first-child){
+    animation: moving 1.2s;
+}*/
+/*thuộc tính cho từng div*/
+#div_show ul {
+    margin: 0px;
+    padding: 0px;
+    animation: transitionIn 1.5s; 
+}
+#div_show ul li {
+    list-style: none;
+    float: left;
+    clear: left;
+    margin-bottom: 10px;
+}
+#div_show ul li .norImg{
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 0px 20px 0px 20px;
+}
+/*Hiệu ứng khi load trang*/
+@keyframes transitionIn {
+    from{
+        opacity: 0;
+        margin-top: -30px;
+    }
+    to{
+        opacity: 0.8;
+        margin-top: 0px;
+    }
+}
+/* @keyframes moving {
+    from{
+        opacity: 0;
+        margin-top: -1000px;
+        display: none;
+    }
+    to{
+        opacity: 1;
+        margin-top: 0px;
+        display: block;
+    }
+} */
+
+/*Chỉnh tiêu đề*/
+.letter_font{
+    color: #f1f1f1;
+    text-align: center;
+    font-size: 45px;
+    font-family:'Times New Roman', Times, serif;
+    margin-bottom: 50px;
+    /*
+    width: 120px;
+    overflow: hidden;
+    white-space: nowrap; 
+    text-overflow: ellipsis;*/
+}
+/*Mô tả */
+.infor_show{
+    width: 1260px;
+}
+p{
+    font-size: 20px;
+    word-wrap: break-word;
+    margin: 0px;
+    /*display: flex;
+    overflow: hidden;
+    white-space: nowrap; 
+    text-overflow: ellipsis;*/
+}
+/*Tiêu đề của div*/
+.size_tieude {
+    text-decoration: none;
+    padding: 0px 10px 0px 10px;
+    display: block;
+    font-size: 52px;
+    color: black;
+    transition: 1s;
+}
+.size_tieude:hover{
+    font-size: 64px;
+    color: rgb(255, 255, 255);
+}
+/*button control*/
+#button_st{
+    margin: 0px auto;
+    padding: 0px;
+}
+.fo_btn{
+    float: left;
+    width: 120px;
+    height: 60px;
+}
+.btn{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    height: 50px;
+    background-color: aqua;
+    color: brown;
+    border: 1px solid #111;
+    border-radius: 10px;
+    margin: 10px 20px;
+    padding: 10px 10px 10px 10px;
+    transition: 0.5s;
+}
+.btn a{
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: blueviolet;
+    color: #f1f1f1;
+    height: 60px;
+}
+.pagination{
+    font-size: 32px;
+    color: #f1f1f1;
+    text-align: center;
+    margin: 60px 0px 0px 0px;
+    padding: 20px 0px;
+    height: 60px;
+    list-style: none;
+    line-height: 60px;
+}

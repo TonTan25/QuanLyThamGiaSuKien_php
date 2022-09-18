@@ -1,0 +1,93 @@
+#div_tcn{
+    margin: 0px auto 10px auto;
+	padding: 10px 10px 10px 10px;
+    width: 1400px;
+    background-color: rgba(24, 181, 187, 0.616);
+    height: 1500px;
+    border: 1px solid #000;
+    border-radius:  5px;
+}
+h1{
+    text-align: center;
+}
+#div_tcn .avatar{
+    background-color: rgba(61, 54, 54, 0.534);
+    height: 300px;
+    width: 200px;
+    border: 1px solid #000;
+    margin: 0px auto 10px auto;
+	padding: 0px;
+}
+input[type=image]{
+    height: 300px;
+    width: 200px;
+}
+#div_tcn .thongtin {
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+}
+/*bang*/
+.tbl {
+    width: 600px;
+    background-color: rgba(179, 216, 248, 0.705);
+    border-radius: 5px;
+}
+.tbl_2 {
+    margin: 20px auto;
+    width: 1400px;
+    background-color: rgba(179, 216, 248, 0.705);
+    border-radius: 5px;
+}
+#div_tcn .tbl .dong{
+    font-size: 23px;
+}
+.cot{
+    text-align: left;
+    border: 1px solid #000;
+    width:16%;
+    font-size: 18px;
+}
+.cot1{
+    text-align: right;
+    width: 50%;
+    border-bottom: 1px solid #000;
+}
+.cot2{
+    text-align: left;
+    border-bottom: 1px solid #000;
+}
+.pagination{
+    font-size: 32px;
+    color: #f1f1f1;
+    text-align: center;
+    margin: 60px 0px 0px 0px;
+    padding: 20px 0px;
+    height: 60px;
+    list-style: none;
+    line-height: 60px;
+}
+.find_ev{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 23px;
+    width: 900px;
+    margin: 20px auto;
+}
+.find_ev .c {
+    width: 300px;
+}
+.find_ev .ipt_x{
+    font-size: 23px;
+    height: 34px;
+    border-radius: 5px;
+}
+.find_ev .btn_x {
+    font-size: 23px;
+    background-color: #f1f1f1;
+    height: 34px;
+    transition: 0.8s;
+    border-radius: 5px;
+}
+.find_ev .btn_x:hover{
+    background-color: #000;
+    color: #f1f1f1;
+}
